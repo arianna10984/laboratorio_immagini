@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>la tortuga</title>
+
+    <style>
+         *{
+             margin: 0;
+             padding:0;
+         }
+        body {
+            background-image: url("https://i.picsum.photos/id/237/200/300.jpg");
+            background-size:cover;
+        }
+         .container{
+             width:900px;
+             margin:0 auto;
+             background:#fff;
+             padding-top:10px;
+         }
+
+        .clearboth{
+            clear:both;
+        }
+         .linea{
+             width:100%;
+         }
+
+         figure{
+             width:32%;
+             float:left;
+             margin-bottom:10px;
+             margin-left:1%;
+         }
+
+         figure img{
+             width:100%;
+             border-radius:15px;
+         }
+         figure img:hover{
+             filter: grayscale(100%);
+             -webkit-filter: grayscale(100%);
+         }
+
+         figcaption{
+             text-align:center;
+             font-size:12px;
+             font-weight:bold;
+         }
+
+      /*stli foto*/
+        .desenfoque{
+             filter: blur(3px);
+             -webkit-filter: blur(3px);
+         }
+
+
+         .grises{
+             filter: grayscale(100%);
+             -webkit-filter: grayscale(100%);
+         }
+         .grises:hover{
+             filter: grayscale(0%);
+             -webkit-filter: grayscale(0%);
+         }
+
+         .invertir{
+             filter: invert(100%);
+             -webkit-filter: invert(100%);
+         }
+
+         .sepia{
+             filter: sepia(100%);
+             -webkit-filter: sepia(100%);
+         }
+         .sepia:hover{
+             filter: sepia(0%);
+             -webkit-filter: sepia(0%);
+         }
+
+
+         .rotacion{
+             filter: hue-rotate(45deg);
+             -webkit-filter: hue-rotate(45deg);
+         }
+
+         .brillo{
+             filter: brightness(200%);
+             -webkit-filter: brightness(200%);
+         }
+
+         .contraste{
+             filter: contrast(200%);
+             -webkit-filter: contrast(200%);
+         }
+
+
+         .saturacion{
+             filter: saturate(150%) hue-rotate(45deg) blur(1px);
+             -webkit-filter:  saturate(150%) hue-rotate(45deg) blur(1px);
+         }
+
+
+
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+<div class="container" >
+
+    <div class="linea">
+
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Foto Original"/>
+            <figcaption>Foto Original</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Desenfoque" class="desenfoque"/>
+            <figcaption>Desenfoque</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Escala de Grises" class="grises"/>
+            <figcaption>Escala de Grises</figcaption>
+        </figure>
+
+        </div>
+
+    <div class="linea">
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Invertir" class="invertir"/>
+            <figcaption>Invertir</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Sepia" class="sepia"/>
+            <figcaption>Sepia</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Rotación de Color" class="rotacion"/>
+            <figcaption>Rotación de Color</figcaption>
+        </figure>
+    </div>
+
+
+    <div class="linea">
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Brillo" class="brillo"/>
+            <figcaption>Brillo</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Contraste" class="contraste"/>
+            <figcaption>Contraste</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://i.picsum.photos/id/237/200/300.jpg" alt="Saturación" class="saturacion"/>
+            <figcaption>Saturación</figcaption>
+        </figure>
+
+   </div>
+    <div class="clearboth"></div>
+</div>
+
+
+</body>
+</html>
